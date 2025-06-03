@@ -21,25 +21,26 @@
                 <div class="form-section" id="profile-username-section">
                     <label class="form-label">Profile & Username</label>
                     <div class="profile-username-row">
-                        <div class="upload-option">
-                            <input type="file" id="profileUpload" accept="image/*" class="file-input">
-                            <label for="profileUpload" class="upload-btn">
-                                <span class="upload-icon">📸</span>
-                                Upload Image
-                            </label>
+                        <div class="upload-and-ai-group"> 
+                            <div class="upload-option"> 
+                                <input type="file" id="profileUpload" accept="image/*" class="file-input">
+                                <label for="profileUpload" class="upload-btn">
+                                    <span class="upload-icon">📸</span>
+                                    <span class="upload-text">Upload Image</span> 
+                                </label>
+                                <div class="ai-generate-area"> 
+                                    <div class="ai-option disabled"> 
+                                        <button type="button" class="ai-btn" disabled>
+                                            <span class="ai-icon">🎨</span>
+                                        </button>
+                                        <small class="coming-soon">AI Gen (Soon)</small> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="username-input-group">
                             <input type="text" id="username" name="username" maxlength="64" class="form-input" placeholder="Enter your username">
                             <small class="form-hint">Up to 64 characters</small>
-                        </div>
-                    </div>
-                    <div class="ai-generate-area">
-                        <div class="ai-option disabled"> 
-                            <button type="button" class="ai-btn" disabled>
-                                <span class="ai-icon">🎨</span>
-                                AI Generate
-                            </button>
-                            <small class="coming-soon">Coming Soon</small>
                         </div>
                     </div>
                 </div>
