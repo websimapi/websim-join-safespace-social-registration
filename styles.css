@@ -118,11 +118,24 @@ body {
     margin-top: 10px;
 }
 
-/* Profile Picture Options */
-.profile-pic-options {
+.profile-username-row {
     display: flex;
-    gap: 20px;
     align-items: flex-start;
+    gap: 20px;
+}
+
+.upload-option {
+    flex-shrink: 0;
+}
+
+.username-input-group {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-generate-area {
+    margin-top: 15px;
 }
 
 .file-input {
@@ -133,6 +146,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px;
     border: 2px dashed #cbd5e0;
     border-radius: 12px;
@@ -140,6 +154,12 @@ body {
     transition: all 0.3s ease;
     background: #f7fafc;
     min-width: 120px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.upload-btn span {
+    display: block;
 }
 
 .upload-btn:hover {
@@ -155,7 +175,6 @@ body {
 .ai-option {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .ai-btn {
@@ -184,9 +203,10 @@ body {
     margin-top: 8px;
     color: #a0aec0;
     font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
 }
 
-/* Color Options */
 .color-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -249,7 +269,6 @@ body {
     cursor: pointer;
 }
 
-/* Interests */
 .interests-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -284,7 +303,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Plan Cards */
 .plan-options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -361,7 +379,6 @@ body {
     font-size: 1rem;
 }
 
-/* Payment Section */
 .payment-section {
     border: 2px solid #667eea;
     border-radius: 16px;
@@ -461,7 +478,6 @@ body {
     text-decoration: underline;
 }
 
-/* Submit Button */
 .submit-btn {
     width: 100%;
     padding: 16px;
@@ -481,7 +497,6 @@ body {
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -513,9 +528,9 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .profile-pic-options {
-        flex-direction: column;
-        align-items: center;
+    .profile-username-row {
+        /* flex-direction: column; */
+        /* align-items: stretch; */
     }
 }
 
@@ -530,5 +545,32 @@ body {
     
     .color-options {
         grid-template-columns: 1fr;
+    }
+
+    .profile-username-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    .upload-option {
+        width: 100%;
+    }
+    .upload-btn {
+        width: 100%;
+    }
+    .username-input-group {
+        width: 100%;
+    }
+    .ai-generate-area {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .ai-option {
+        /* align-items: center; */
+        /* width: 100%; */
+    }
+    .ai-btn {
+        /* width: 100%; */
+        /* max-width: 200px; */
     }
 }

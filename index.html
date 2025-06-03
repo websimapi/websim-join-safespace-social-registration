@@ -17,17 +17,10 @@
             <h2>Create Your Safe Space</h2>
             
             <form id="registrationForm">
-                <!-- Username Section -->
-                <div class="form-section">
-                    <label for="username" class="form-label">Choose Your Username</label>
-                    <input type="text" id="username" name="username" maxlength="64" class="form-input" placeholder="Enter your username">
-                    <small class="form-hint">Up to 64 characters</small>
-                </div>
-
-                <!-- Profile Picture Section -->
-                <div class="form-section">
-                    <label class="form-label">Profile Picture</label>
-                    <div class="profile-pic-options">
+                <!-- Combined Profile Picture & Username Section -->
+                <div class="form-section" id="profile-username-section">
+                    <label class="form-label">Profile & Username</label>
+                    <div class="profile-username-row">
                         <div class="upload-option">
                             <input type="file" id="profileUpload" accept="image/*" class="file-input">
                             <label for="profileUpload" class="upload-btn">
@@ -35,7 +28,13 @@
                                 Upload Image
                             </label>
                         </div>
-                        <div class="ai-option disabled">
+                        <div class="username-input-group">
+                            <input type="text" id="username" name="username" maxlength="64" class="form-input" placeholder="Enter your username">
+                            <small class="form-hint">Up to 64 characters</small>
+                        </div>
+                    </div>
+                    <div class="ai-generate-area">
+                        <div class="ai-option disabled"> 
                             <button type="button" class="ai-btn" disabled>
                                 <span class="ai-icon">🎨</span>
                                 AI Generate
@@ -327,4 +326,3 @@
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-
