@@ -171,16 +171,15 @@ body {
 
 .ai-generate-area {
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100% + 8px);
     left: 0;
-    transform: translateX(-50%);
     z-index: 5;
 }
 
 .ai-option {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .ai-btn {
@@ -210,7 +209,7 @@ body {
     margin-top: 4px;
     color: #a0aec0;
     font-size: 0.7rem;
-    text-align: center;
+    text-align: left;
 }
 
 .color-options {
@@ -560,23 +559,16 @@ body {
     }
     .upload-option {
         width: 100%;
-    }
-    .upload-btn {
-        width: 100%;
-    }
-    .username-input-group {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .ai-generate-area {
-        display: flex;
-        justify-content: flex-start;
+        position: static;
+        margin-top: 10px;
+        width: auto;
     }
     .ai-option {
         align-items: center;
-        width: 100%;
-    }
-    .ai-btn {
-        width: 100%;
-        max-width: 200px;
     }
 }
