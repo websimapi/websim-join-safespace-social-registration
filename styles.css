@@ -145,7 +145,6 @@ body {
 
 .upload-btn {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100px;
@@ -160,23 +159,14 @@ body {
     text-align: center;
 }
 
-.upload-btn span {
-    display: block;
-}
-
 .upload-btn:hover {
     border-color: #667eea;
     background: #edf2f7;
 }
 
-.upload-icon {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
-
-.upload-text {
-    font-size: 0.8rem;
-    line-height: 1.2;
+.upload-svg-icon {
+    width: 2.8rem;
+    height: 2.8rem;
 }
 
 .ai-generate-area {
